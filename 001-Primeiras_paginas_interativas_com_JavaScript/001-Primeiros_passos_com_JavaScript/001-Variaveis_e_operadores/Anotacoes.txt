@@ -1,0 +1,25 @@
+Tipos de variáveis:
+
+  String:
+    Utilizado para armazenar texto.
+
+  Number:
+    Utilizado par armazenar números.
+
+  Boolean:
+    Utilizado para armazenar resultado lógico. 
+    Pode ser true(vedadeiro) ou false(falso).
+
+  Undefined:
+    Tipo idefinido. Geralmente quando a variável em questão ainda não recebeu nenhum valor.
+    Não se aplica a uma String, pois uma String pode ter valor empty(vazio).
+    Exemplo:
+      let nome = " ";
+      No exemplo a variável nome recebeu um valor vazio.
+
+  Para ver o tipo de uma variável podemos usar o método typeOf().
+    Exemplo:
+      let nome;
+      cosole.log(typeOf(nome));
+
+      O método recebe a variável como parâmetro e devolve o seu tipo como resposta.
