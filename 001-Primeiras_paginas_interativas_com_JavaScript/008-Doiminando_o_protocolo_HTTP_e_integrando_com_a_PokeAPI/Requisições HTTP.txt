@@ -1,0 +1,24 @@
+Requisição HTTP
+Composta por:
+
+  URL: https://pokeapi.co/api/v2/pokemon/1
+
+      https://pokeapi.co/api/v2       /pokemon/1
+      ${Endereço}                     ${path = caminho de identificação do recurso}
+
+  Método: Os mais usados são GET, POST, PUT, DELETE.
+
+Path params e Query String
+  Path params:
+    Indica o caminho até o recurso, passando identificadores.
+
+    Exemplo: https://pokeapi.co/api/v2/pokemon/1
+    Aqui "/pokemon/1" é um path param, que identifica a localização do recurso pokemon de id 1.
+
+  Query String:
+    Na maioria das vezes é utilizada para podermos passar argumentos para uma busca de recurso.
+
+    Exemplo: https://pokeapi.co/api/v2/pokemon?type=grass&name=b
+    Aqui a URL "https://pokeapi.co/api/v2/pokemon" é seguida da query string "?type=grass&name=b".
+     
+    A URL "https://pokeapi.co/api/v2/pokemon" retorna a lista com todos os pokemons existentes na API. Porém ao passarmos a query string "?type=grass&name=b" conseguimos fazer um filtro, reduzindo os resultados aos pokemons do tipo grass e com nome iniciado com b.
