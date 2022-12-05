@@ -1,10 +1,9 @@
 Requisição HTTP
 Composta por:
-
   URL: https://pokeapi.co/api/v2/pokemon/1
 
       https://pokeapi.co/api/v2       /pokemon/1
-      ${Endereço}                     ${path = caminho de identificação do recurso}
+      Endereço (URL)                  Path (caminho de identificação do recurso)
 
   Método: Os mais usados são GET, POST, PUT, DELETE.
 
@@ -22,3 +21,23 @@ Path params e Query String
     Aqui a URL "https://pokeapi.co/api/v2/pokemon" é seguida da query string "?type=grass&name=b".
      
     A URL "https://pokeapi.co/api/v2/pokemon" retorna a lista com todos os pokemons existentes na API. Porém ao passarmos a query string "?type=grass&name=b" conseguimos fazer um filtro, reduzindo os resultados aos pokemons do tipo grass e com nome iniciado com b.
+
+Headers:
+  Onde são colocadas as consfigurações da requisição, e onde recebemos as respostas do servidor.
+
+Body:
+  Dependendo do tipo da requisição podemos enviar dados no corpo da requisição.
+  Usando o método PUT para atualizar dados de um recurso, por exemplo. Enviamos no Body os novos
+  dados que quermos inserir no recurso.
+
+
+Composição básica de uma requisição:
+  -URL
+  -Request Method
+  -Request Headers
+  -Request Body
+
+Composição básica de uma resposta:
+  -Status Code
+  -Response Headers
+  -Response Body
